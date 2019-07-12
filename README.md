@@ -7,20 +7,17 @@ Library providing secp256k1 curve operations. Using this library you can:
 This code based on source code from answer:
 * https://bitcoin.stackexchange.com/questions/25024/how-do-you-get-a-bitcoin-public-key-from-a-private-key
 
+- **This library fix the bug of original library abount the calculate of rem.**
+
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `secp256k1` to your list of dependencies in `mix.exs`:
+adding `secp256k1` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
   [
-    {:secp256k1, "~> 0.1.0"}
+     {:secp256k1, git: "https://github.com/peatio/secp256k1", branch: "master"},
   ]
 end
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/secp256k1](https://hexdocs.pm/secp256k1).
 

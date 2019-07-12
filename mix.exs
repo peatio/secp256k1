@@ -6,7 +6,7 @@ defmodule Secp256k1.Mixfile do
       app: :secp256k1,
       version: "0.1.0",
       elixir: "~> 1.5",
-      start_permanent: Mix.env == :prod,
+      start_permanent: Mix.env() == :prod,
       deps: deps(),
       package: package(),
       description: description()
@@ -33,10 +33,12 @@ defmodule Secp256k1.Mixfile do
   end
 
   defp package do
-    [name: :secp256k1,
-     files: ["lib", "mix.exs"],
-     maintainers: ["Alexander Malaev"],
-     licenses: ["MIT"],
-     links: %{"GitHub" => "https://github.com/spscream/secp256k1"}]
+    [
+      name: :secp256k1,
+      files: ["lib", "mix.exs"],
+      maintainers: ["Alexander Malaev"],
+      licenses: ["MIT"],
+      links: %{"GitHub" => "https://github.com/spscream/secp256k1"}
+    ]
   end
 end
