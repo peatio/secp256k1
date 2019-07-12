@@ -23,8 +23,8 @@ defmodule Secp256k1.Mixfile do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      # {:dep_from_hexpm, "~> 0.3.0"},
-      # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"},
+      {:libsecp256k1, [github: "peatio/libsecp256k1", manager: :rebar, optional: true]},
+      {:poison, "~> 3.1.0"}
     ]
   end
 
