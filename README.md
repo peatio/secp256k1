@@ -11,6 +11,13 @@ This code based on source code from answer:
 
 ## Installation
 
+pre-requirement
+
+```
+# for OSX
+brew install gmp
+```
+
 adding `secp256k1` to your list of dependencies in `mix.exs`:
 
 ```elixir
