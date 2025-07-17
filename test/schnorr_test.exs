@@ -26,7 +26,7 @@ defmodule Secp256k1.SchnorrTest do
   end
 
   defp get_json(filename) do
-    with {:ok, body} <- File.read(filename), {:ok, json} <- Poison.decode(body), do: {:ok, json}
+    with {:ok, body} <- File.read(filename), {:ok, json} <- Jason.decode(body), do: {:ok, json}
   end
 
   defp to_atom_struct(struct) do
