@@ -23,8 +23,8 @@ defmodule Secp256k1.Mixfile do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:libsecp256k1, [github: "peatio/libsecp256k1", manager: :rebar, optional: true]},
-      {:poison, "~> 3.1.0"}
+      {:libsecp256k1, [github: "ljzn/libsecp256k1", tag: "v0.2.3", override: true]},
+      {:jason, "~> 1.4.1"}
     ]
   end
 
